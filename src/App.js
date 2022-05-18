@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route} from "react-router-dom"
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Works from './components/Works/Works'
+import Navbar from './components/Navbar/Navbar'
+import Platon from './components/Works/Platon/Platon'
+import Sedal from './components/Works/Sedal/Sedal'
+import Solane from './components/Works/Solane/Solane';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} /> 
+        <Route path='/about' element={<About />} /> 
+        <Route path='/works' element={<Works />}>
+          <Route path='/works/platon' element={<Platon />}/>
+          <Route path='/works/sedal' element={<Sedal />}/>
+          <Route path='/works/solane' element={<Solane />}/>
+        </Route> 
+        {/* <Route path='/works/*' element={<Works />} />  */}
+      </Routes>
     </div>
   );
 }
