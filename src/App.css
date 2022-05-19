@@ -1,27 +1,9 @@
-.App {
-  display: block;
-  text-align: center;
-  width: 100%;
-  padding:  auto;
+.Dark{
+  background: rgb(55, 53, 53);
+  color:#F1f1f1
 }
 
-.App h1{
-  color: rgb(30, 99, 25)
+.Light{
+  background:#F1f1f1;
+  color:rgb(55, 53, 53)
 }
-
-.App .navbar{
-  display: block;
-}
-.App .home{
-  display: flex;
-  width: 960px
-}
-.App .about{
-  display: flex;
-  width: 960px
-}
-.App .works{
-  display: flex;
-  width: 960px
-}
-

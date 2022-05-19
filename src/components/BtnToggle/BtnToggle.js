@@ -4,7 +4,7 @@ import {ThemeContext} from '../../context/ThemeContext'
 
 export default function BtnToggle() {
 
-    const {toggleTheme, theme} = useContext(ThemeContext)
+    const {toggleTheme, theme} = useContext(ThemeContext);
 
   return (
     <div 
@@ -12,6 +12,9 @@ export default function BtnToggle() {
         className={theme ? 'btn-toggle goLight' : 'btn-toggle goDark'}
         >
             {theme ? 'Dark' : 'Light'}
+
+            
+
         </div>
   )
 }

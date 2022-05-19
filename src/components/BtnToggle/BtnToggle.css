@@ -18,8 +18,11 @@
 .btn-toggle.goLight{
     background: #333;
     color: #F1f1f1;
+        
+    border: 1px solid #F1F1F1;
 }
 .btn-toggle.goDark{
     background: #F1f1f1;
     color: #333;
+    border: 1px solid #333;
 }
