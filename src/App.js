@@ -8,6 +8,7 @@ import Platon from './components/Works/Platon/Platon'
 import Sedal from './components/Works/Sedal/Sedal'
 import Solane from './components/Works/Solane/Solane';
 import ThemeContextProvider from './context/ThemeContext';
+import BtnToggle from './components/BtnToggle/BtnToggle';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <ThemeContextProvider>
         <Navbar />
+        <BtnToggle />
         <Routes>
           <Route path='/' element={<Home />} /> 
           <Route path='/about' element={<About />} /> 
