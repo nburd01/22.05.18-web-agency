@@ -1,9 +1,15 @@
-.Dark{
-  background: rgb(55, 53, 53);
-  color:#F1f1f1
+
+.dark {
+  background-color: rgb(24, 24, 24);
+  color: #fff;
+  height: 100vh;
+  transition: all 0.3s;
+
 }
 
-.Light{
-  background:#F1f1f1;
-  color:rgb(55, 53, 53)
+.light {
+  background-color: #ffffff;
+  color: rgb(24, 24, 24);
+  height: 100vh;
+  transition: all 0.3s;
 }
