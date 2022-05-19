@@ -4,7 +4,9 @@
   color: #fff;
   height: 100vh;
   transition: all 0.3s;
-
+}
+.dark a{
+  color: rgb(91, 138, 173)
 }
 
 .light {
