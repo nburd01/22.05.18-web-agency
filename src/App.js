@@ -7,22 +7,25 @@ import Navbar from './components/Navbar/Navbar'
 import Platon from './components/Works/Platon/Platon'
 import Sedal from './components/Works/Sedal/Sedal'
 import Solane from './components/Works/Solane/Solane';
+import ThemeContextProvider from './context/ThemeContext';
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} /> 
-        <Route path='/about' element={<About />} /> 
-        <Route path='/works' element={<Works />}>
-          <Route path='/works/platon' element={<Platon />}/>
-          <Route path='/works/sedal' element={<Sedal />}/>
-          <Route path='/works/solane' element={<Solane />}/>
-        </Route> 
-        {/* <Route path='/works/*' element={<Works />} />  */}
-      </Routes>
+      <ThemeContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} /> 
+          <Route path='/about' element={<About />} /> 
+          <Route path='/works' element={<Works />}>
+            <Route path='/works/platon' element={<Platon />}/>
+            <Route path='/works/sedal' element={<Sedal />}/>
+            <Route path='/works/solane' element={<Solane />}/>
+          </Route> 
+          {/* <Route path='/works/*' element={<Works />} />  */}
+        </Routes>
+      </ThemeContextProvider>
     </div>
   );
 }
