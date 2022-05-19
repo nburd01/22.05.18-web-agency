@@ -13,5 +13,6 @@ export default function Home() {
             Notre agence web est capable de répondre à tous vos besoins et d'élaborer une véritable stratégie digitale.</p>
       {theme} 
     </div> 
+
   )
 }

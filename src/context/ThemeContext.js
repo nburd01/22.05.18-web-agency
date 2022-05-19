@@ -7,7 +7,7 @@ const ThemeContextProvider = (props) => {
     const [theme, setTheme] = useState('Hello World');
 
     return(
-        <ThemeContext.Provider value={theme}>
+        <ThemeContext.Provider value={{theme}}>
             {props.children}
         </ThemeContext.Provider>
     )
